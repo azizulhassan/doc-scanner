@@ -31,16 +31,14 @@ export async function persistScannedImage(sourceUri) {
 
 /**
  * Checks whether the native ML Kit / VisionKit DocumentScanner module is compiled
- * into the current binary (false in Expo Go).
+ * into the current binary.
  */
 export function isNativeScannerAvailable() {
   return false;
 }
 
 /**
- * Launches the document scanner.
- * Uses `expo-image-picker` camera with built-in cropping so it works in Expo Go
- * as well as standalone builds without native bridge mismatches.
+ * Launches the document scanner using `expo-image-picker` camera with built-in cropping.
  *
  * @returns {Promise<string[]>} Array of persistent local image URIs.
  */
