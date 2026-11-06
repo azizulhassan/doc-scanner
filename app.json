@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "DocScanner",
+    "slug": "doc-scanner-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#1E293B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.docscanner.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow DocScanner to access your camera to scan documents.",
+        "NSPhotoLibraryUsageDescription": "Allow DocScanner to access your photos to import document images."
+      }
+    },
+    "android": {
+      "package": "com.docscanner.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#1E293B"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    }
+  }
+}
